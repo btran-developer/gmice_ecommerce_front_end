@@ -1,0 +1,37 @@
+.contact-us {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 12pt;
+  margin-top: 20px;
+
+  @media screen and (max-width: 700px) {
+    & {
+      flex-direction: column;
+      padding: 0 20px;
+    }
+  }
+
+  .title {
+    font-size: larger;
+    font-weight: bolder;
+    padding-bottom: 10px;
+  }
+
+  .store-address,
+  .contact-info {
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+
+  .our-location,
+  .contact-form {
+    width: 40%;
+
+    @media screen and (max-width: 700px) {
+      & {
+        width: 100%;
+      }
+    }
+  }
+}

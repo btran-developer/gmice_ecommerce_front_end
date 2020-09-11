@@ -1,0 +1,11 @@
+@import "../../style-variables";
+
+.product-detail-header {
+  border-bottom: 1px solid $mediumGrey;
+  margin-bottom: 20px;
+
+  .product-name {
+    font-size: 30pt;
+    letter-spacing: 4px;
+  }
+}

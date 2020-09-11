@@ -1,0 +1,24 @@
+@import "../../style-variables";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  bottom: 0;
+  width: 100%;
+  background-color: $mainBlack;
+  padding: 20px;
+  color: $mainWhite;
+  height: 300px;
+  position: absolute;
+
+  .brands-logo-group {
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+
+    .brand-logo {
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.checkout-payment {
+  display: flex;
+  justify-content: space-evenly;
+
+  @media screen and (max-width: 700px) {
+    & {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .checkout-payment-form {
+    width: 30%;
+
+    @media screen and (max-width: 700px) {
+      & {
+        padding-top: 30px;
+        width: 70%;
+      }
+    }
+  }
+}

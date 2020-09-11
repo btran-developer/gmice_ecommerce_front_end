@@ -1,0 +1,40 @@
+@import "../../style-variables";
+
+.success-sending-msg {
+  display: flex;
+  flex-direction: column;
+  color: greenyellow;
+  font-size: 20pt;
+  align-items: center;
+
+  .success-text {
+    color: $mainBlack;
+  }
+
+  .success-confirm {
+    margin-top: 20px;
+    font-size: 15pt;
+  }
+}
+
+.failed-sending-msg {
+  display: flex;
+  flex-direction: column;
+  color: crimson;
+  font-size: 20pt;
+  align-items: center;
+
+  .failed-text {
+    color: $mainBlack;
+  }
+
+  .failed-msg {
+    font-size: 12pt;
+    color: $mainBlack;
+  }
+
+  .failed-confirm {
+    margin-top: 20px;
+    font-size: 15pt;
+  }
+}

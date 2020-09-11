@@ -1,0 +1,22 @@
+.backdrop {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: opacity 0.3s ease-out;
+  opacity: 1;
+  overflow-y: scroll;
+}
+
+.dialog-box {
+  width: 40%;
+  height: 50%;
+  background-color: white;
+
+  @media screen and (max-width: 700px) {
+    width: 90%;
+  }
+}

@@ -1,0 +1,41 @@
+@import "../../style-variables";
+
+.cartline {
+  display: flex;
+  width: 50%;
+  padding: 10px 0;
+  border-bottom: 1px $lightGrey solid;
+
+  @media screen and (max-width: 700px) {
+    & {
+      width: 100%;
+    }
+  }
+
+  .rep-image {
+    width: 40%;
+    height: 20vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .item-title-quantity-price {
+    display: flex;
+    flex-direction: column;
+
+    .item-title {
+      font-size: 1.5rem;
+    }
+
+    .item-quantity {
+      width: 50%;
+    }
+
+    .delete-item-btn {
+      margin-top: 1rem;
+      cursor: pointer;
+      width: 10%;
+    }
+  }
+}

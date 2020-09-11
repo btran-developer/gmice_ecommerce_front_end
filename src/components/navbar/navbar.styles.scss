@@ -1,0 +1,54 @@
+@import "../../style-variables";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: $mainBlack;
+  color: $mainBlue;
+  padding: 0 60px;
+  position: relative;
+
+  .brand {
+    font-family: "Orbitron", sans-serif;
+    font-size: 25px;
+    letter-spacing: 3px;
+  }
+
+  .brand,
+  .menu,
+  .cart {
+    transition: color 0.2s ease-out;
+  }
+
+  .brand:hover,
+  .menu:hover,
+  .cart:hover {
+    cursor: pointer;
+    color: $mainWhite;
+  }
+
+  .badge {
+    box-sizing: border-box;
+    display: inline-block;
+    background-color: #e63d2b;
+    color: $mainWhite;
+    border-radius: 3rem;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    line-height: 20px;
+    bottom: 20px;
+    right: 2%;
+  }
+
+  @media screen and (max-width: 800px) {
+    & {
+      padding: 0 30px;
+    }
+  }
+}

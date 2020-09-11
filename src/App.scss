@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Orbitron:900&display=swap");
+@import "./style-variables";
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-between;
+}
+
+.content {
+  margin: 5% 0;
+  padding: 0 60px 20% 60px;
+  // min-height: 50vh;
+
+  @media screen and (max-width: 700px) {
+    & {
+      padding: 20px 15px 100% 15px;
+    }
+  }
+}

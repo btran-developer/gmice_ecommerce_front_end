@@ -1,0 +1,22 @@
+.checkout-summary {
+  width: 300px;
+
+  @media screen and (min-width: 700px) {
+    width: 50%;
+  }
+
+  .checkout-summary-list {
+    list-style-type: none;
+    padding: 0;
+
+    .checkout-summary-item {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .checkout-summary-total-price {
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,30 @@
+@import "../../style-variables";
+
+.login-form {
+  color: $mainBlack;
+
+  .login-form-title {
+    text-align: center;
+    font-size: 30pt;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .login-form-other-option {
+    font-size: 12pt;
+    clear: both;
+    text-align: center;
+
+    button {
+      text-transform: lowercase;
+      font-size: 12pt;
+    }
+  }
+
+  .login-btn {
+    margin-left: 25%;
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}

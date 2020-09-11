@@ -1,0 +1,95 @@
+@import "../../style-variables";
+
+.authentication-page {
+  .authentication-page-background {
+    width: 100%;
+    // height: 200vh;
+    height: 100%;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    z-index: -1;
+    background-color: rgba($mainBlue, 0.8);
+  }
+  .authentication-desktop-layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 5%;
+
+    .greeting-message {
+      font-size: 6rem;
+      letter-spacing: 2px;
+      text-align: center;
+      color: black;
+      font-weight: bolder;
+      font-family: "Roboto", sans-serif;
+
+      .brand-name {
+        font-family: "Orbitron", sans-serif;
+        letter-spacing: 5px;
+      }
+
+      .caption {
+        font-size: 20pt;
+        font-weight: lighter;
+      }
+    }
+
+    .login-or-signup {
+      background-color: $lightGrey;
+      width: 30%;
+      border-radius: 10px;
+      box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+    }
+
+    @media screen and (max-width: 700px) {
+      & {
+        flex-direction: column;
+
+        .greeting-message {
+          font-size: 3rem;
+          letter-spacing: 0.5px;
+
+          .brand-name {
+            letter-spacing: 2.5px;
+          }
+        }
+
+        .login-or-signup {
+          width: 80%;
+        }
+      }
+    }
+  }
+
+  .buttons-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10% 0;
+
+    .or {
+      color: $mainBlack;
+      font-size: 20pt;
+      margin: 20px 0;
+    }
+
+    .signup-btn,
+    .login-btn {
+      width: 80%;
+      padding: 5px 0;
+      font-weight: bold;
+      letter-spacing: 3px;
+    }
+  }
+
+  .form-component {
+    width: 25%;
+    margin-top: 40px;
+    padding: 20px;
+  }
+}

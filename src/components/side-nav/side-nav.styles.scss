@@ -1,0 +1,60 @@
+@import "../../style-variables";
+
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: #242424;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  color: $mainBlue;
+
+  &.open {
+    width: 25%;
+    opacity: 1;
+    // color: #818181;
+
+    @media screen and (max-width: 700px) {
+      & {
+        width: 100%;
+      }
+    }
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    cursor: pointer;
+
+    &:hover {
+      // color: #03a9f4;
+      color: $mainWhite;
+    }
+  }
+
+  a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    // color: #818181;
+    transition: 0.3s;
+
+    &:hover {
+      // color: #03a9f4;
+      color: $mainWhite;
+    }
+
+    &.active {
+      border-right: 5px $mainBlue solid;
+    }
+  }
+}
